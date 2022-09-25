@@ -29,7 +29,6 @@ const AboutSection = () => {
           </Link>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          {/* <Image src={AboutImg} className='rounded-xl' alt='/' /> */}
           <Image
               className="object-cover object-center rounded" 
               width="720px"
@@ -37,7 +36,6 @@ const AboutSection = () => {
               alt="hero" 
               src={couple}
           />
-          {/* <img className="object-cover object-center rounded-xl" alt="hero" src="https://dummyimage.com/720x600/edf2f7/a5afbd"/> */}
         </div>
       </div>
     </div>

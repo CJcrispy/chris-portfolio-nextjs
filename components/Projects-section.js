@@ -15,7 +15,7 @@ export default function ProjectsSection() {
                 description={proj.description}
                 link={proj.link}
                 imgUrl={proj.imgUrl}
-                number={`${idx + 1}`}
+                key={idx}
               />
             ))}
         </div>
