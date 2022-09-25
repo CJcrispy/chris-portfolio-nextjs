@@ -1,0 +1,33 @@
+    skills: {
+      "Frontend":[
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Netlify",
+        "Bootstrap",
+        "TailwindCss"
+      ],
+      "Backend": [
+        "Java",
+        "Python",
+        "Go",
+        "Node.js"
+      ],
+      "Database and Cloud": [
+        "PostgreSQL",
+        "MySQL",
+        "FastAPI",
+        "AWS",
+        "Heroku"
+      ],
+      "Testing": [
+        "Selenium",
+        "Cypress",
+        "Postman",
+        "Jmeter"
+      ]
+      
+    },
