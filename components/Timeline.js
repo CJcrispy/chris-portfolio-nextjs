@@ -10,7 +10,7 @@ const Timeline = () => {
                 </div>
                 <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                     <ul className="timeline timeline-centered">
-                        {userData.experience.map((time) => (
+                        {userData.experience.map((time, idx) => (
                             <TimelineItem
                                 title={time.title}
                                 company={time.company}
