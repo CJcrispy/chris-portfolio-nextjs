@@ -1,18 +1,10 @@
 import { Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
   ChatBubbleBottomCenterIcon,
-  ChartBarIcon,
   CursorArrowRaysIcon,
-  LifebuoyIcon,
-  PhoneIcon,
   MoonIcon,
   SunIcon,
-  PlayIcon,
-  ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
   UserIcon,
@@ -21,6 +13,7 @@ import Link from 'next/link'
 import userData from "../constant/data";
 import { useTheme } from 'next-themes';
 import React, { Fragment, useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const solutions = [
   {
@@ -112,19 +105,26 @@ function Navbar() {
               </Popover.Button>
             </div>
             <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-
-              <a href="/about" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="/about">
+              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                 About
               </a>
-              <a href="/projects" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              </Link>
+              <Link href="/projects">
+              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Projects
               </a>
-        <a href="/experience" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              </Link>
+              <Link href="/experience">
+              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Experience
               </a>
-        <a href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              </Link>
+              <Link href="/contact">
+              <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Contact
               </a>
+              </Link>
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
               {renderThemeChanger()}
@@ -147,7 +147,7 @@ function Navbar() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
+                  <Image
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500"
                     alt="Your Company"
