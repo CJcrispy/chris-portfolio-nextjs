@@ -147,11 +147,16 @@ function Navbar() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <Image
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500"
-                    alt="Your Company"
-                  />
+                  <Link href="/">
+                    <a>
+                    <h1 className="font-semibold text-xl">
+                      {userData.name}<span className="text-blue-500"> {userData.lastName}</span>
+                    </h1>
+                    <p className="text-base text-gray-700 dark:text-gray-300">
+                      {userData.designation}
+                    </p>
+                    </a>
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
