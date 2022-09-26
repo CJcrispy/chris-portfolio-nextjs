@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import couple from "../public/profilePic.jpeg";
+import svgPic from "../public/computer.svg";
 import userData from "../constant/data";
 
 const Main = () => {
@@ -25,7 +25,7 @@ const Main = () => {
                                 width="720px"
                                 height="650px"
                                 alt="hero" 
-                                src={couple}
+                                src={svgPic}
                             />
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const Main = () => {
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-col text-center w-full mb-20">
                             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Here are some</h2>
-                            <h1 className="sm:text-3xl text-2xl font-medium title-font ">Featured Projects</h1>
+                            <h1 className="sm:text-3xl text-2xl font-medium title-font ">Upcoming Projects</h1>
                         </div>
                         <div className="flex flex-wrap -m-4">
                             {userData.featuredProjects.map((proj, idx) => (

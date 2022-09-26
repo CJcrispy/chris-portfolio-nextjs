@@ -18,29 +18,29 @@ const userData = {
         link: "https://placeholdertech.in",
       },
       {
-        title: "Portfolio",
+        title: "Property Management App",
         description: "test3",
         link: "https://manuarora.in",
       },
     ],
     projects: [
       {
-        title: "Personal Project Manager",
-        description: "test",
-        link: "https://tailwindmasterkit.com",
-        imgUrl: "/tmk.jpg",
+        title: "Sudoku",
+        description: "A simple sudoku project with auto completion. It uses a backtracking alogrithm as the sudoku solver",
+        link: "https://github.com/CJcrispy/Sudoku-game",
+        imgUrl: "https://images.unsplash.com/photo-1640537702474-3e503c21eefc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
       },
       {
-        title: "Date Planner",
-        description: "test",
-        link: "https://placeholdertech.in",
-        imgUrl: "/placeholdertech.png",
+        title: "Social Media API Template",
+        description: "A Spring Boot api to simulate functions of social media app",
+        link: "https://github.com/CJcrispy/Social-Media-API",
+        imgUrl: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       },
       {
         title: "Portfolio",
-        description: "test",
-        link: "https://manuarora.in",
-        imgUrl: "/portfolio.png",
+        description: "You're looking at it",
+        link: "https://github.com/CJcrispy/chris-portfolio-nextjs",
+        imgUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80",
       },
     ],
     about: {
@@ -139,11 +139,11 @@ const userData = {
       },
     ],
     resumeUrl:
-      "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+      "../constant/Christopher_Copeland_Resume.pdf",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/christopher-copeland-3aa599180/",
       github: "https://github.com/CJcrispy",
-      showwcase: ""
+      showwcase: "https://www.showwcase.com/cjcrispy"
     },
   };
   

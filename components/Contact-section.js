@@ -22,7 +22,6 @@ const ContactSection = () => {
             <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
               <div className='lg:p-4 h-full '>
                 <div>
-                {/* <img className="object-cover object-center rounded-xl" alt="hero" src="https://dummyimage.com/720x600/edf2f7/a5afbd"/> */}
                   <Image
                     className='rounded-xl hover:scale-105 ease-in duration-300'
                     src={couple}
@@ -69,8 +68,8 @@ const ContactSection = () => {
                     </div>
                     </a>
                     
-                    <Link href='/resume'>
-                      <a>
+                    <Link href={userData.resumeUrl} download>
+                      <a download>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                           <BsFillPersonLinesFill />
                         </div>
@@ -89,26 +88,6 @@ const ContactSection = () => {
                   method='POST'
                   encType='multipart/form-data'
                 >
-                  <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                    <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2'>Name</label>
-                      <input
-                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                        type='text'
-                        name='name'
-                      />
-                    </div>
-                    <div className='flex flex-col'>
-                      <label className='uppercase text-sm py-2'>
-                        Phone Number
-                      </label>
-                      <input
-                        className='border-2 rounded-lg p-3 flex border-gray-300'
-                        type='text'
-                        name='phone'
-                      />
-                    </div>
-                  </div>
                   <div className='flex flex-col py-2'>
                     <label className='uppercase text-sm py-2'>Email</label>
                     <input
