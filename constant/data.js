@@ -3,7 +3,7 @@ const userData = {
     name: "Chris",
     lastName: "Copeland",
     designation: "Test Automation Engineer",
-    avatarUrl: "../public/profile-pic.jpeg",
+    avatarUrl: "../constant/profile-pic.jpeg",
     email: "cjcopeland20@gmail.com",
     address: "Maplewood, New Jersey.",
     projects: [

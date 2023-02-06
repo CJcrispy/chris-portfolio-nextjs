@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import couple from "../public/profilePic.jpeg";
+import profile from "../constant/profilePic.jpeg";
 import Link from 'next/link';
 import userData from '../constant/data';
 
@@ -33,8 +33,8 @@ const AboutSection = () => {
               className="object-cover object-center rounded" 
               width="720px"
               height="650px"
-              alt="hero" 
-              src={couple}
+              alt="profilePic" 
+              src={profile}
           />
         </div>
       </div>
