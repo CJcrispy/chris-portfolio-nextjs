@@ -28,7 +28,7 @@ const userData = {
     ],
     about: {
       title:
-        "I'm a software developer that loves building products and web applications that impact millions of lives",
+        "I'm not your average tester",
       paragraph1: "I'm a skilled Software QA Engineer with over 3 years of  full system development lifecycle experience, including designing, developing, and implementing test plans, test cases and test processes, accustomed to working in complex, project-based environments.",
       paragraph2: "I can use tools to create test plans and execute test cases for both web and mobile applications. Skilled in test automation, using Cypress or Selenium with TestNG frameworks, reporting, API testing with Postman, performance testing in Jmeter/Locust, database testing in Python, and defect investigation. I have a knack for picking up on business procedures quickly, and I'm effective at interacting with both users and developers.",
     },
