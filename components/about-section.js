@@ -14,7 +14,7 @@ const AboutSection = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I am not your average tester
+          {userData.about.title}
           </p>
           <p className='py-2 text-gray-600'>
             {userData.about.paragraph1}           

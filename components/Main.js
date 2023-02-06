@@ -31,7 +31,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                <section className="text-gray-700 body-font border-t border-gray-200">
+                {/* <section className="text-gray-700 body-font border-t border-gray-200">
                     <div className="container px-5 py-24 mx-auto">
                         <div className="flex flex-col text-center w-full mb-20">
                             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Here are some</h2>
@@ -48,7 +48,7 @@ const Main = () => {
                                 ))}
                         </div>
                     </div>
-                </section>
+                </section> */}
             </main>
         </div>
     )
