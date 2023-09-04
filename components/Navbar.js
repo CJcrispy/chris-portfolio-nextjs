@@ -8,6 +8,7 @@ import {
   Squares2X2Icon,
   XMarkIcon,
   UserIcon,
+  DocumentTextIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import userData from "../constant/data";
@@ -18,28 +19,19 @@ import Image from 'next/image';
 const solutions = [
   {
     name: 'About',
-    description: 'Get a better understanding of where your traffic is coming from.',
     href: '/about',
     icon: UserIcon,
   },
   {
     name: 'Projects',
-    description: 'Speak directly to your customers in a more meaningful way.',
     href: '/projects',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Experience',
-    description: "Connect with third-party tools that you're already using.",
     href: '/experience',
     icon: Squares2X2Icon,
-  },
-  {
-    name: 'Contact',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '/contact',
-    icon: ChatBubbleBottomCenterIcon,
-  },
+  }
 ]
 
 function Navbar() {
@@ -120,6 +112,10 @@ function Navbar() {
                 Experience
               </a>
               </Link>
+              <button>
+                <a href={userData.resumeUrl}
+                    download>Resume </a>
+              </button>
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
               {renderThemeChanger()}
@@ -175,8 +171,8 @@ function Navbar() {
                 </nav>
               </div>
             </div>
-            <div className="space-y-6 py-6 px-5">
 
+            <div className="space-y-6 py-6 px-5">
               <div >
 			          {renderThemeChanger()}
               </div>

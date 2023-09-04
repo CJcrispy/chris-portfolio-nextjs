@@ -18,8 +18,7 @@ const Hero = () => {
                 </h1>
                 <h1 className='py-2 text-gray-700'>A {userData.designation}</h1>
                 <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-                    I’m focused on building responsive front-end web applications while
-                    learning back-end technologies.
+                    I’m focused on building fully automated tests and CI/CD pipelines to accommodate them.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <a
