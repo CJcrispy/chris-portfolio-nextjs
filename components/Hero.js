@@ -3,53 +3,61 @@ import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import landing from "../constant/landingPic.jpg";
+import profile from "../constant/profilePic.jpeg";
+import Image from 'next/image';
 import userData from "../constant/data";
 
 const Hero = () => {
     return(
-        <div id='home' className='w-full h-screen text-center'>
-            <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+        <section className="text-gray-600 body-font">
+            <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
                 <div>
-                <p className='uppercase text-sm tracking-widest text-gray-600'>
-                    LET&#39;S BUILD SOMETHING TOGETHER
-                </p>
-                <h1 className='py-4 text-gray-700 text-3xl'>
-                    Hi, I&#39;m <span className='text-blue-500'> {userData.name}</span>
-                </h1>
-                <h1 className='py-2 text-gray-700'>A {userData.designation}</h1>
-                <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-                    I’m focused on building fully automated tests and CI/CD pipelines to accommodate them.
-                </p>
-                <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <a
-                    href={userData.socialLinks.linkedin}
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaLinkedinIn />
-                    </div>
-                    </a>
-                    <a
-                    href={userData.socialLinks.github}
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    </a>
-                    <a href={userData.resumeUrl}
-                    download>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                    </div>
-                    </a>
-                    
+                    <Image className="mb-4  rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px" 
+                        width={350}
+                        height={350}
+                        alt="hero pic" 
+                        src={landing}
+                    />
                 </div>
+                <div className="text-center lg:w-2/3 w-full">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">
+                    Hi, I&#39;m <span className='text-blue-500'> {userData.name}</span>
+                    </h1>
+                    <h3 className=' sm:text-2xl text-2xl mb-4 text-gray-700'>A {userData.designation}</h3>
+                    <p className="mb-8 leading-relaxed">
+                    I’m focused on building fully automated tests and CI/CD pipelines to accommodate them.
+                    </p>
+                    <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+                        <a
+                        href={userData.socialLinks.linkedin}
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaLinkedinIn />
+                        </div>
+                        </a>
+                        <a
+                        href={userData.socialLinks.github}
+                        target='_blank'
+                        rel='noreferrer'
+                        >
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaGithub />
+                        </div>
+                        </a>
+                        <a href={userData.resumeUrl}
+                        download>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <BsFillPersonLinesFill />
+                        </div>
+                        </a>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 
 }
