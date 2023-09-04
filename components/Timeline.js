@@ -2,29 +2,13 @@ import userData from "../constant/data";
 
 const Timeline = () => {
     return(
-        // <div className="container-flex mx-auto flex flex-col gap-8 mt-2">
-        //     <div className="row example-centered">
-        //         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-        //             <ul className="timeline timeline-centered">
-        //                 {userData.experience.map((time, idx) => (
-        //                     <TimelineItem
-        //                         title={time.title}
-        //                         company={time.company}
-        //                         companyLink={time.companyLink}
-        //                         desc={time.desc}
-        //                         desc2={time.desc2}
-        //                         desc3={time.desc3}
-        //                         desc4={time.desc4}
-        //                         date={time.date}
-        //                         key={idx}
-        //                     />
-        //                 ))}
-        //             </ul>
-        //         </div>
-        //     </div>
-        // </div>
-        <section className="text-gray-600 body-font">
-            <div className="container-fluid px-5 py-24 mx-auto flex flex-wrap">
+        <section className="w-full">
+            <div className="container-flex mx-auto flex flex-col items-center gap-8 mt-2">
+                <h1 className=" text-5xl md:text-9xl font-bold py-20 md:text-left">
+                Experience
+                </h1>
+            </div>
+            <div className="container-flex">
                 {userData.experience.map((time, idx) => (
                     <TimelineItem
                     title={time.title}
@@ -57,8 +41,8 @@ const TimelineItem = ({ title, date, companyLink, company, desc, desc2, desc3, d
                     </svg>
                 </div>
                 <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                    <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">{title}</h2><span>{date}</span>
-                    <a href={companyLink}><h3 className="timeline-title">{company}</h3></a>
+                    <h2 className="font-medium title-font mb-1 text-xl">{title}</h2><span>{date}</span>
+                    <a href={companyLink}><h3 className="">{company}</h3></a>
                     <p className="leading-relaxed">{desc}</p>
                     <p className="leading-relaxed">{desc2}</p>
                     <p className="leading-relaxed">{desc3}</p>
