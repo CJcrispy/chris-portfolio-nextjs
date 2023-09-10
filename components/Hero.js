@@ -11,11 +11,15 @@ const Hero = () => {
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
                 <div>
-                    <Image className="mb-4  rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px" 
+                    <Image className="mb-4 rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px" 
                         width={350}
                         height={350}
                         alt="hero pic" 
                         src={landing}
+                        style={{
+                            // Adjust the z-index property to make sure the image is behind the mobile navbar.
+                            zIndex: -2, // This places the image behind other elements.
+                          }}
                     />
                 </div>
                 <div className="text-center lg:w-2/3 w-full">
