@@ -123,7 +123,7 @@ const userData = {
       },
     ],
     resumeUrl:
-      "../constant/Christopher_Copeland_Resume.pdf",
+      "/Christopher_Copeland_Resume.pdf",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/christopher-copeland-3aa599180/",
       github: "https://github.com/CJcrispy",
